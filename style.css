@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,10 +11,10 @@ body{
     width: 100%;
     height: 100%;
     letter-spacing: 0.03em;
-    
+    font-family:'Titillium Web', sans-serif;
 }
 
-/* Navbar */
+/* Barra de Navegación */
 .navbar{
     display: flex;
     justify-content: center;
@@ -19,12 +22,13 @@ body{
     background-color: rgba(0,0, 0, 0.5);
     position: sticky;
     top: 0;
+
 }
 
 .navbar ul{
     display: flex;
     list-style: none;
-    margin: 20px 0px;
+    margin: 10px 0px 20px 0px;
 }
 
 .navbar ul li{
@@ -46,15 +50,16 @@ body{
     box-shadow: 0 0 10px white;
 }
 
-/* Home Section */
+/* Sección Inicio */
 #home{
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, .5);
-    height: 640px;
+    height: 645px;
     justify-content: center;
     align-items: center;
     color: white;
+    
 }
 
 #home::before{
@@ -63,10 +68,11 @@ body{
     top: 0;
     right: 0;
     background: url('banner_1.gif') no-repeat center center/cover;
-    height: 700px;
+    height: 800px;
     width: 100%;
     z-index: -1;
     opacity: .8;
+    
 }
 
 .main{
@@ -83,8 +89,9 @@ body{
     font-family: century;
     font-size: 3rem;
     text-align: center;
-    margin: 40px 0px;
+    margin: 30px 0px 20px 0px;
 }
+
 
 .btn{
     padding: 10px 35px;
@@ -103,13 +110,15 @@ body{
     font-weight: bold;
 }
 
-/* About Section */
+/* Sección Acerca de mí */
 #about{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 20px;
-    margin-bottom: 50px;
+    padding: 40px;
+    background: linear-gradient(to top, white 15%, black 98%);
+    color: white;
+    
 }
 
 #pic{
@@ -119,47 +128,56 @@ body{
 #pic img{
     width: 575px;
     height: 400px;
+    padding: 20px;
+    border-radius: 200px;
+    margin: auto 25px auto 5px;
+    background-color: rgb(12, 12, 12);
 }
 
 #intro{
     display: flex;
     flex-direction: column;
     text-align: justify;
-    padding: 10px;
+    padding: 5px;
 }
 
 #intro h2{
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
 }
 
-/* Portfolio Section */
+.pAboutMe{
+    font-size: 22px;
+    color: black;
+}
+
+/* Sección Portafolio */
 #portfolio{
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, .9);
-    color: white;
+    color: black;
     align-items: center;
     padding: 20px;
+    background: linear-gradient(to top, black 15%, white 99.8%);
+    height: 20%;
 }
 
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     box-sizing: border-box;
+    color: white;
 }
 
 .container .card{
     width: 330px;
-    height: 430px;
+    height: auto;
     border-radius:  8px;
     box-shadow: 0 2px 2px rgba(15, 250, 150, 0.2);
     overflow: hidden;
-    margin: 20px;
+    margin: 15px;
     text-align: center;
     transition: all 0.25s;
     flex-direction: column; 
@@ -178,6 +196,8 @@ body{
 
 .container .card h4{
     font-weight: 600;
+    margin: 10px 0px;
+    text-decoration:underline solid 1px;
 }
 
 .container .card p{
@@ -187,39 +207,48 @@ body{
 
 }
 
-/* Services Section */
+/* Sección Tecnologías */
 #services{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    background: linear-gradient(to top, white 15%, black 99.8%);
+    color: white;
+    height: 20%;
+
 }
 
 .row{
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     flex-wrap: wrap;
     box-sizing: border-box;
+    color: black;
+    margin: 5px 35px;
+    font-family: 'Titillium Web', sans-serif;
+    
 }
 
 .box{
     display: flex;
     flex-direction: column;
     width: 350px;
-    height: 580px;
+    height: 480px;
     border: 1px solid black;
-    margin: 10px;
+    margin: 10px 0px 10px 0px;
     align-items: center;
     text-align: justify;
     padding: 10px;
     border-end-end-radius: 15px;
-    background: linear-gradient(to top, rgb(75, 17, 17) 50%, white 50%);
+    border-start-end-radius: 15px;
+    background: linear-gradient(to bottom, white 30%, black 100%);
     background-size: 100% 200%;
-    transition: all .8s;
+    transition: all .5s;
 }
 
-.box:hover{
+.row:hover{
     background-position: left bottom;
-    color: white;
+    color: black;
     border: none;
     box-shadow: 0 0 28px rgb(75,17,17);
 }
@@ -227,11 +256,30 @@ body{
 .box img{
     width: 180px;
     height: 180px;
-    background-color: white;
-    padding: 10px;
 }
 
-/* Contact Section */
+.row ul{
+    font-size: 1.7rem;
+    list-style:none; 
+    
+
+    
+}
+
+.row ul li{
+    margin: 10px 30px 20px 30px;
+}
+
+.row ul li img{
+    height: 55px;
+    width: 55px;
+    background-color: none;
+    border-radius: 45px;
+    margin-bottom: -18px;
+    margin-top: 35px;
+}
+
+/* Sección contacto */
 #contact{
     display: flex;
     flex-direction: column;
@@ -239,6 +287,9 @@ body{
     background-color: rgba(0,0, 0, .8);
     color: white;
     padding: 20px;
+    background: linear-gradient(to top, black 15%, white 99.8%);
+    color: black;
+    height: 20%;
 }
 
 .form{
