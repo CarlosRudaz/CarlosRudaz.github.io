@@ -3,3 +3,4 @@ Descripción personal y últimos trabjaos realizados.
 
 Portafolio realizado para la tercera etapa del "Informatorio", realizado en la provincia del chaco de manera virtual.
 
+Trabajo realizado utilizando unicamente html y css.
