@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/0ef28d6ec9.js" crossorigin="anonymous"></script>
     <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+
 </head>
 
 <body>
@@ -191,61 +192,14 @@
                     <br>
                 </ul>
             </div>
-            <!-- <div class="box">
-                <img src="tecnologias/lenguajes.png" alt="">
-                <h1 class="headdings" style="margin: 20px 0px;">Backend</h1>
-                <ul>    
-                    <li>
-                        
-                        <img src="iconos/python.png" alt="c++"> Python
-                        
-                    </li>
-                    <li>
-                        
-                        <img src="iconos/c++.png" alt="c++"> C
-                        
-                    </li>
-                    <li >
-                        
-                        <img src="iconos/c.png" alt="c++"> C++
-                        
-                    </li>
-                    <li>
-                        
-                        <img src="iconos/java.png" alt="c++"> Java
-                        
-                    </li>
-                    <br>
-                </ul>
-            </div>
-
-            <div class="box">
-                <img src="tecnologias/pngDesign.png" alt="">
-                <h1 class="headdings" style="margin: 20px 0px;"> Diseño<br> UX/UI</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et adipisci ipsa voluptatem corrupti 
-                    aliquid assumenda neque libero necessitatibus exercitationem quaerat? Quis expedita accusamus 
-                    molestiae distinctio nostrum? Praesentium recusandae alias et.</p>
-            </div>
-
-            <div class="box">
-                <img src="tecnologias/pngMarketin.png" alt="">
-                <h1 class="headdings" style="margin: 20px 0px;">Marketing Digital</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et adipisci ipsa voluptatem corrupti 
-                    aliquid assumenda neque libero necessitatibus exercitationem quaerat? Quis expedita accusamus 
-                    molestiae distinctio nostrum? Praesentium recusandae alias et.</p>
-            </div>
-
-            
-        </div> -->
-
-        
     </section>
 
     <section id="contact">
         <h1 class="headdings">CONTACTARME</h1>
-        <form action="" class="form">
-            <input type="text" name="name" class="input" placeholder="Ingrese su Nombre">
-            <input type="text" name="email" placeholder="Ingrese su Email" class="input">
+
+        <form action="enviar.php" class="form" method="post">
+            <input type="text" name="name" id="name" class="input" placeholder="Ingrese su Nombre">
+            <input type="text" name="email" id="email" placeholder="Ingrese su Email" class="input">
             <textarea name="msg" id="msg" placeholder="Ingrese su Mensaje" cols="30" rows="10"></textarea>
             <input type="submit" value="ENVIAR" id="send">
         </form>
