@@ -1,6 +1,6 @@
 <?php
 $name = $_POST['name'];
-$email = $_POST['email']
+$email = $_POST['email'];
 $msg = $_POST['msg'];
 
 $header = 'From: ' . $email . " \r\n";
@@ -9,9 +9,9 @@ $header .= "Mime-Version: 1.0  \r\n";
 $header .= "Content-Type: text/plain";
 
 $msg = "Este mensaje fue enviado por: " . $name . " \r\n";
-$msg = "Su email es: " . $email . " \r\n";
-$msg = "Mensaje: " . $_POST['msg'] . " \r\n";
-$msg = "Enviado el: " . date('d/m/Y', time())
+$msg .= "Su email es: " . $email . " \r\n";
+$msg .= "Mensaje: " . $_POST['msg'] . " \r\n";
+$msg .= "Enviado el: " . date('d/m/Y', time());
 
 $para = 'kangu930@gmail.com';
 $asunto = 'PORTAFOLIO';
